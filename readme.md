@@ -1,6 +1,6 @@
 # CSS Performance
 
-This repository is about how CSS makes your website faster or how CSS might slow down your website. Website performance is one of the most important feature of your website for the end user. Also consider that CSS one of the biggest contributor to slow render times and if your site takes forever to load, chances are your users aren't gonna wait for it to finish loading.
+This repository is about how CSS makes your website faster or how CSS might slow down your website. Consider that CSS one of the biggest contributor to slow render times and if your website takes forever to load, chances are your users aren't gonna wait for it to finish loading.
 
 ## Table contents
 
@@ -12,7 +12,7 @@ This repository is about how CSS makes your website faster or how CSS might slow
 
 ## CSS selectors performance
 We humans read left to right but browsers read CSS selectors from right to left. It's more efficient for a browser to start at the right-most element (the one it knows it wants to style) and work its way back up the DOM tree than it is to start high up the DOM tree and take a journey down that might not even end up at the right-most selector–also known as the key selector.
-For an in-depth reason as to why they browsers do this [discussion](https://stackoverflow.com/questions/5797014/why-do-browsers-match-css-selectors-from-right-to-left).
+For an in-depth reason as to why they browsers do this check this [discussion](https://stackoverflow.com/questions/5797014/why-do-browsers-match-css-selectors-from-right-to-left).
 
 - Use single class selectors.
 - Don't use star(*) as a child selector.
