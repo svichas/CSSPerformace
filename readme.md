@@ -24,7 +24,7 @@ For an in-depth reason as to why they browsers do this check this [discussion](h
 ## CSS load time performance
 CSS is a render blocking resource. What to do about it?
 
-- Don't use @import with CSS instead use <link/> in HTML
+- Don't use @import with CSS instead use &lt;link/&gt; in HTML
 
 #### Example:
 main.css just downloads fine but as soon as it opens this CSS file, main.css says go download those 4 files. We are creating long request chains and that increases render time by quite a lot. Web browsers can't start rendering until he gets all requested files from the start.
