@@ -27,7 +27,8 @@ CSS is a render blocking resource. What to do about it?
 - Don't use @import with CSS instead use <link/> in HTML
 
 #### Example:
-main.css just downloads fine but as soon as it opens this CSS file, main.css says go download those 4 files. We are creating long request chains and that increases render time by quite a lot. Web browsers can't start rendering until he gets all request file from the start.
+main.css just downloads fine but as soon as it opens this CSS file, main.css says go download those 4 files. We are creating long request chains and that increases render time by quite a lot. Web browsers can't start rendering until he gets all requested files from the start.
+
 ![CSS Import example](img/Screenshot_2.png)
 
 - Inline your CSS in HTML
