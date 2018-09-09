@@ -24,6 +24,23 @@ For an in-depth reason as to why they browsers do this check this [discussion](h
 ## CSS load time performance
 CSS is a render blocking resource. What to do about it?
 
+- Avoid expensive properties
+    - :last-child
+    - :first-child
+    - :nth-child
+    - :nth-type-of
+    - border-radius
+    - box-shadow
+    - filter
+    - transform
+    - position fixed
+
+Try reduce use of those rules because they require more time to be computed and rendered.
+
+- Minify CSS
+
+Minifying your CSS will drastically reduce the size that a user downloads to view your page.
+
 - Don't use @import with CSS instead use &lt;link/&gt; in HTML
 
 #### Example:
@@ -33,13 +50,15 @@ main.css just downloads fine but as soon as it opens this CSS file, main.css say
 
 - Inline your CSS in HTML
 
-The obvious and immediate caveat is that now the whole HTML document is huge! But downloading a large HTML document is bad because no other resources (images for example) can be downloaded in parallel whilst the browser is working on rendering the page with what it's downloaded so far.
+Inlining CSS cuts down on the amount of data the browser needs to download before it can start rendering a page. When you use external CSS files, they must be downloaded separately after your markup document finishes downloading.
 
 ```html
 <style>
 .site-header {height: 55px; background-color: #fff;} ...
 </style>
 ```
+
+
 
 ## Contributors
 - [Stefanos Vichas](https://github.com/svichas/)
