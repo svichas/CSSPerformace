@@ -17,14 +17,6 @@ For an in-depth reason as to why they browsers do this check this [discussion](h
 
 - Keep your CSS selectors short.
 - Don't use star(*) selector as a child selector.
-
-> Roughly 50% of the time used to calculate the computed style for an element is used to match selectors...
-[csswz.it/2GIs8l4](https://csswz.it/2GIs8l4)
-
-
-## CSS load time
-CSS is a render blocking resource. What to do about it?
-
 - Avoid expensive selectors and properties
     - :last-child
     - :first-child
@@ -35,6 +27,13 @@ CSS is a render blocking resource. What to do about it?
     - filter
     - transform
     - position fixed
+
+> Roughly 50% of the time used to calculate the computed style for an element is used to match selectors...
+[csswz.it/2GIs8l4](https://csswz.it/2GIs8l4)
+
+
+## CSS load time
+CSS is a render blocking resource. What to do about it?
 
 Try reduce use of those rules because they require more time to be computed and rendered.
 
