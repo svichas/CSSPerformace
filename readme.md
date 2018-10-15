@@ -86,9 +86,3 @@ The general rule of thumb is that if the animation might be triggered in the nex
 - https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css
 - [Harry Roberts: FaCSSt—CSS and Performance](https://www.youtube.com/watch?v=2Rn8an74khk)
 - [Animations and Performance](https://developers.google.com/web/fundamentals/design-and-ux/animations/animations-and-performance)
-
-
-## To do
-- Chrome developer tools
-- CSS syntax to avoid
-- Render-tree Construction
